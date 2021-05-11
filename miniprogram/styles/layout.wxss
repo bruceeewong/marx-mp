@@ -1,0 +1,13 @@
+/* 为了让单独定位的图片能与背景图对上, 以屏幕中心为定位参考点 */
+.absolute-center {
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fullscreen {
+  width: 100vw;
+  min-height: 100vh;
+}

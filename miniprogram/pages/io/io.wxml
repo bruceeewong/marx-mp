@@ -1,0 +1,37 @@
+<!--pages/io/io.wxml-->
+<marx-loading wx:if="{{loading}}" loading="{{loading}}"></marx-loading>
+
+<view wx:if="{{status === 'ready'}}" style="display: {{loading ? '' : 'flex'}};" class="page bg-connected bg--fullscreen">
+	<image class="img-btn" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/btn-launch.png" bindtap="bindLaunch"></image>
+</view>
+
+<video wx:elif="{{status === 'launching'}}" class="fullscreen-video" show-play-btn="{{false}}" show-progress="{{false}}" show-fullscreen-btn="{{false}}" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/videos/launch_rocket.mp4" autoplay bindended="bindLaunchEnd"></video>
+
+<view wx:elif="{{status === 'landing'}}" class="bg-waiting bg--fullscreen"></view>
+
+<view wx:elif="{{finished === true}}" class="page bg-result bg--fullscreen">
+	<view class="header">
+		<text class="title-1">恭喜您成为火星</text>
+		<text class="title-2">第 {{landResult.rank}} 位成功登陆者</text>
+	</view>
+
+	<view class="main bg bg-gift-panel">
+		<view class="bg bg-id-card id-card">
+			<view class="id-card-img-mask">
+				<image class="id-card__img" src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+			</view>
+			<view class="id-card-info">
+				<text class="id-card-info__name">{{userInfo.name}}</text>
+				<text class="id-card-info__address">{{userInfo.marsArea}}</text>
+				<text class="id-card-info__id">{{marxId}}</text>
+			</view>
+		</view>
+		<view class="gift-area">
+			<block wx:for="{{gifts}}">
+				<image class="gift-img" wx:key="item.img" src="{{item.img}}" />
+			</block>
+		</view>
+	</view>
+</view>
+
+<view wx:else class="fullscreen bg-universe"></view>

@@ -1,0 +1,20 @@
+<!--pages/marx-ticket/marx-ticket.wxml-->
+<marx-loading wx:if="{{loading}}" showText="{{false}}"></marx-loading>
+<audio-player></audio-player>
+
+<view class="page bg-universe">
+	<view class="header">
+		<image class="img-title-top" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/welcome.png" mode="widthFix" />
+		<text class="desc color-gray-7">接下来，请前往发射中心开启后续环节。</text>
+	</view>
+
+	<view class="ticket-wrapper" bindtap="bindSaveTicket">
+		<canvas canvas-id="marx-ticket" class="ticket border-color-red"></canvas>
+		<text class="tips color-gray-7">点击图片可保存至相册</text>
+	</view>
+
+	<view class="footer">
+		<image class="img-btn" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/btn-scan.png" bindtap="bindScanCode" />
+		<text class="footer-tips color-red" bindtap="bindToCenter">活动地点说明</text>
+	</view>
+</view>

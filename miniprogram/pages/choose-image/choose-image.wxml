@@ -1,0 +1,14 @@
+<!--pages/choose-image/choose-image.wxml-->
+<view class="page fullscreen bg-universe">
+	<view class="header">
+		<image class="img-title-top" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/page-choose-image-title.png" />
+		<text class="desc color-gray-7">上传你的正面照，生成专属火星通行证</text>
+	</view>
+
+	<view class="main">
+		<image class="center-img" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/takephoto.png" />
+		<text class="desc color-gray-7 tips">要求五官清晰无遮挡</text>
+	</view>
+
+	<image class="img-btn" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/btn-photo.png" mode="widthFix" bindtap="bindChooseImage" />
+</view>

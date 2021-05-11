@@ -1,0 +1,71 @@
+/* pages/face-clip/face-clip.wxss */
+.page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.movable-area,
+.clip-box {
+  width: 600rpx;
+  height: 600rpx;
+  left: 75rpx;
+}
+
+.clip-box {
+  box-sizing: border-box;
+  position: absolute;
+  border: 6rpx dashed #f75336;
+  pointer-events: none;
+}
+
+.image {
+  /* 这里这样写样式是因为不这样写在 ios 下图片会糊 */
+  /* 详见 https://developers.weixin.qq.com/community/develop/doc/000cca893107c8895fc839e6351400 */
+  width: 400%;
+  height: 400%;
+  transform: translate3d(0, 0, 0) scale(0.25, 0.25);
+  transform-origin: left top;
+}
+
+.tips {
+  display: block;
+  width: 100%;
+  margin-bottom: 20rpx;
+
+  text-align: center;
+}
+.footer {
+  position: fixed;
+  left: 50%;
+  bottom: 64rpx;
+
+  width: 650rpx;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bottom-btns {
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  width: 45% !important;
+}
+/* 把 canvas 定位到屏幕之外 */
+.canvas {
+  position: fixed;
+  left: 100%;
+  top: 100%;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40rpx;
+}
+.finish-btn {
+  color: #fff;
+}

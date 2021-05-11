@@ -1,0 +1,60 @@
+/* components/audio-player/index.wxss */
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.audio-player {
+  z-index: 999;
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.audio-player-btn {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 20rpx 0;
+}
+
+.audio-player-btn--play {
+  animation: rotate 8s infinite linear;
+}
+
+.audio-player--mini {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.audio-player--medium {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.audio-player--large {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.audio-player-trigger--mini {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.audio-player-trigger--medium {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.audio-player-trigger--large {
+  width: 50rpx;
+  height: 50rpx;
+}

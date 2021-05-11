@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<marx-loading wx:if="{{loading}}"></marx-loading>
+<audio-player></audio-player>
+
+<view class="page bg-index">
+	<image src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/dynamic-title.png" class="img-header" bindload="bindImgLoad" binderror="bindImgError" />
+	<image src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/btn-join.png" class="img-btn" bindtap="handleRouteToNotice" bindload="bindImgLoad" binderror="bindImgError" />
+	<image src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/tx-skps.png" mode="widthFix" class="img-tx-skps" bindload="bindImgLoad" binderror="bindImgError" />
+</view>
+
+<view class="absolute-center">
+	<image class="img-universe ani-rotate" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/rect-universe.jpg" mode="widthFix" bindload="bindImgLoad" binderror="bindImgError" />
+</view>

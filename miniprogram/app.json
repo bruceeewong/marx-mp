@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/notice/notice",
+    "pages/identify/identify",
+    "pages/info-form/info-form",
+    "pages/choose-image/choose-image",
+    "pages/facefusion/facefusion",
+    "pages/facefusion-result/facefusion-result",
+    "pages/face-clip/face-clip",
+    "pages/marx-ticket/marx-ticket",
+    "pages/pick-suit/pick-suit",
+    "pages/socket/socket",
+    "pages/io/io"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000108",
+    "backgroundColor": "#000108",
+    "navigationBarTitleText": "Marx",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "audio-player": "/components/audio-player/index"
+  },
+  "style": "v2"
+}

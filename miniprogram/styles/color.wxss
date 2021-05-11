@@ -1,0 +1,12 @@
+.color-red {
+  color: #f75336;
+}
+.bg-color-red {
+  background-color: #f75336;
+}
+.border-color-red {
+  border-color: #f75336;
+}
+.color-gray-7 {
+  color: #8c8c8c;
+}

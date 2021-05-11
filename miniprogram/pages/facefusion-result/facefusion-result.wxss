@@ -1,0 +1,35 @@
+/* pages/facefusion-result/facefusion-result.wxss */
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40rpx 0;
+}
+.img-btn {
+  width: 450rpx;
+  margin-top: auto;
+  margin-bottom: 72rpx;
+  color: #fff;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.face-detail {
+  margin: 30rpx 0 20rpx;
+}
+.face-lg {
+  width: 540rpx;
+  height: 720rpx;
+}
+
+.desc {
+  font-size: 28rpx;
+}

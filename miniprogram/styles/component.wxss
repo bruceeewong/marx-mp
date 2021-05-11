@@ -1,0 +1,61 @@
+.img-title {
+  position: absolute;
+  left: 75rpx;
+  width: 560rpx;
+  height: 470rpx;
+}
+
+.classic-1 .img-title {
+  position: absolute;
+  left: 60rpx;
+}
+
+.img-title-top {
+  width: 350rpx;
+  margin: 48rpx 0 36rpx;
+}
+
+.reset-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  font-size: 60rpx;
+  line-height: inherit;
+  background-color: #ffffff;
+}
+
+.reset-btn::after {
+  border: none;
+}
+
+.btn {
+  background-image: url(https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/btn.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent !important;
+  width: 450rpx;
+  height: 95rpx;
+  line-height: 95rpx;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.btn::after {
+  border: none;
+}
+
+.img-btn {
+  width: 450rpx;
+  height: 95rpx;
+}
+
+.tips {
+  font-size: 28rpx;
+}

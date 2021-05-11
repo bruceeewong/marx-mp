@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "marx-loading": "/components/marx-loading/index"
+  }
+}

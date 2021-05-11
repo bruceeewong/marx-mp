@@ -1,0 +1,141 @@
+/* pages/io/io.wxss */
+.bg--fullscreen {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-connected {
+  background-image: url(https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/connected.png);
+}
+
+.bg-waiting {
+  background-image: url(https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/wait-land.jpg);
+}
+
+.bg-result {
+  background-image: url(https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/result-bg.png);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.img-btn {
+  margin-top: auto;
+  margin-bottom: 86rpx;
+}
+
+.fullscreen-video {
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  margin-top: 143rpx;
+}
+
+.header text {
+  display: block;
+  color: #c42916;
+  text-align: center;
+  font-weight: bold;
+}
+
+.title-1 {
+  font-size: 32rpx;
+}
+
+.title-2 {
+  font-size: 60rpx;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 665rpx;
+  height: 925rpx;
+  margin-top: 65rpx;
+}
+
+.bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-gift-panel {
+  background-image: url(https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/gift-panel.png);
+}
+
+.bg-id-card {
+  background-image: url(https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/id-card.png);
+}
+
+.id-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 665rpx;
+  height: 306rpx;
+  padding: 32rpx 36rpx;
+}
+
+.id-card-img-mask {
+  overflow: hidden;
+  width: 230rpx;
+  height: 230rpx;
+  border-radius: 10rpx;
+}
+
+.id-card__img {
+  width: 230rpx;
+}
+
+.id-card-info {
+  flex: 1;
+  margin-left: 22rpx;
+}
+
+.id-card-info text {
+  display: block;
+  color: #fff;
+}
+
+.id-card-info__name {
+  font-size: 36rpx;
+  margin-top: 35rpx;
+}
+
+.id-card-info__address {
+  font-size: 24rpx;
+  margin-top: 40rpx;
+}
+
+.id-card-info__id {
+  font-size: 24rpx;
+  margin-top: 40rpx;
+}
+
+.gift-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 530rpx;
+  margin-top: 187rpx;
+}
+
+.gift-img {
+  width: 285rpx;
+  height: 412rpx;
+}

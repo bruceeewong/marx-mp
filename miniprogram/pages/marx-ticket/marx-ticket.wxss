@@ -1,0 +1,55 @@
+/* pages/marx-ticket/marx-ticket.wxss */
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.header,
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 608rpx;
+}
+
+.ticket-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 40rpx 0;
+}
+
+.img-title-top {
+  width: 374rpx;
+  height: 155rpx;
+}
+
+.tips {
+  margin-top: 20rpx;
+}
+
+.ticket {
+  width: 608rpx;
+  height: 945rpx;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 75rpx;
+}
+
+.footer-tips {
+  margin-top: 8rpx;
+  font-size: 24rpx;
+}

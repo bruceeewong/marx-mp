@@ -1,0 +1,11 @@
+.bg-index {
+  background-image: url(https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/bg-main-2.png);
+}
+
+.bg-mars {
+  background-image: url(https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/bg-mars.png);
+}
+
+.bg-universe {
+  background-image: url(https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/bg-universe.png);
+}

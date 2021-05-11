@@ -1,0 +1,29 @@
+<!--pages/identify/identify.wxml-->
+<view class="page fullscreen bg-universe">
+	<image src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/page-3-title.png" mode="heightFix" class="img-title" />
+
+	<view class="main">
+		<view class="notice">
+			<text class="text text--strong">
+        为了创建您的火星通行证, 我们需要采集您的微信信息：昵称、性别、国家，仅用于展示并严格保密
+      </text>
+		</view>
+	</view>
+
+	<view class="footer-btn">
+		<button open-type="getUserInfo" class="reset-btn img-fingerprint-wrapper" bindgetuserinfo="onGetUserInfo">
+			<image src="../../assets/icons/finger-print.svg" mode="widthFix" class="img-fingerprint" />
+		</button>
+		<text class="fingerprint-tips">请用任意手指点击</text>
+	</view>
+</view>
+
+<view class="absolute-center">
+	<view class="block">
+		<view class="img-person-wrapper">
+			<image class="img-top ani-bottom-to-top" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/scan-top-ray.png" />
+			<image class="img-person" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/scan-person.png" />
+		</view>
+		<image class="img-bottom" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/scan-bottom-ray.png" />
+	</view>
+</view>

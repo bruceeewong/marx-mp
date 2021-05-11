@@ -1,0 +1,12 @@
+var typecheck = require("./typecheck.wxs");
+
+var placeholder = function (arg, placeholder = "") {
+  if (typecheck.isUndefined(arg) || typecheck.isNull(arg)) {
+    return placeholder;
+  }
+  return arg;
+};
+
+module.exports = {
+  placeholder: placeholder,
+};

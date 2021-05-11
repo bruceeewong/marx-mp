@@ -1,0 +1,25 @@
+var isString = function (arg) {
+  return typeof arg === "string";
+};
+var isUndefined = function (arg) {
+  return typeof arg === "undefined";
+};
+
+var isNull = function (arg) {
+  return arg === null;
+};
+var isObject = function (arg) {
+  return typeof arg === "object ";
+};
+
+var isEmpty = function (arg) {
+  return isUndefined(arg) || isNull(arg) || (isString(arg) && arg === "");
+};
+
+module.exports = {
+  isString: isString,
+  isUndefined: isUndefined,
+  isNull: isNull,
+  isObject: isObject,
+  isEmpty: isEmpty,
+};

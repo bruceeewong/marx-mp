@@ -1,0 +1,5 @@
+<!--pages/socket/socket.wxml-->
+<view class="page fullscreen bg-universe">
+	<button wx:if="{{!ready}}" class="button bg-color-red">连接发射中心</button>
+	<button wx:else class="button bg-color-red" bindtap="sendLaunchRequest">请求发射</button>
+</view>

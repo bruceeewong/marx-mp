@@ -1,0 +1,11 @@
+/**app.wxss**/
+@import "./styles/bg.wxss";
+@import "./styles/layout.wxss";
+@import "./styles/color.wxss";
+@import "./styles/component.wxss";
+@import "./styles/animation.wxss";
+
+page {
+  position: relative;
+  background-color: #000108;
+}

@@ -1,0 +1,66 @@
+/* pages/facefusion/facefusion.wxss */
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  margin-bottom: 50rpx;
+}
+.img-title-top {
+  width: 350rpx;
+  margin: 48rpx 0 36rpx;
+}
+.bottom-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: auto;
+  margin-bottom: 72rpx;
+}
+.img-btn {
+  width: 450rpx;
+}
+.btn-retry {
+  margin-top: 20rpx;
+}
+.face-detail {
+  position: relative;
+  margin: 30rpx 0 40rpx;
+}
+.face-user {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 250rpx;
+  height: 250rpx;
+}
+.face-selections {
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.face-lg {
+  width: 521.25rpx;
+  height: 695rpx;
+}
+.face-sm {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+}
+.face-sm--selected {
+  border: 8rpx solid #ff583a;
+}
+.desc {
+  font-size: 28rpx;
+}
+.tips {
+  margin-bottom: 20rpx;
+}

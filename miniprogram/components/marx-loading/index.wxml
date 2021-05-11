@@ -1,0 +1,10 @@
+<!--components/loading.wxml-->
+<view class="loading bg-universe">
+	<view class="block">
+		<view class="mars">
+			<image class="loading-circle" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/loading-circle.png" />
+			<image class="loading-mars" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/loading.gif" />
+		</view>
+		<image style="display: {{showText ? '' : 'none'}}" class="loading-title" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/loading-title.png" />
+	</view>
+</view>

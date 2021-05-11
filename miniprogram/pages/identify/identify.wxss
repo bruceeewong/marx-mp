@@ -1,0 +1,100 @@
+/* pages/identify/identify.wxss */
+.page {
+  z-index: 10;
+}
+.bg-identification {
+  background-image: url(https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/bg-identification.png);
+  background-size: cover;
+}
+
+.main {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 275rpx;
+}
+.notice {
+  z-index: 10;
+  width: 544rpx;
+  margin-left: 40rpx;
+}
+.text {
+  font-size: 28rpx;
+  font-weight: light;
+  line-height: 42rpx;
+  color: #fff;
+}
+
+.text--strong {
+  background-color: #c42916;
+}
+
+.footer-btn {
+  z-index: 10;
+  position: absolute;
+  bottom: 120rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-fingerprint-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160rpx !important;
+  height: 160rpx;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff583a, #c42916);
+}
+
+.img-fingerprint {
+  width: 100rpx;
+  animation: fade-in-out 2s infinite;
+}
+
+.fingerprint-tips {
+  margin-top: 16rpx;
+  font-size: 0.8em;
+  color: #bfbfbf;
+  animation: fade-in-out 2s infinite;
+}
+
+.absolute-center {
+  z-index: 0;
+}
+.block {
+  position: relative;
+  top: 80rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.img-bottom {
+  width: 500rpx;
+  height: 160rpx;
+}
+.img-person-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.img-top {
+  position: absolute;
+  width: 560rpx;
+  height: 144rpx;
+}
+.img-person {
+  width: 275rpx;
+  height: 470rpx;
+}
+
+.ani-bottom-to-top {
+  animation: bottom-to-top 2s infinite linear;
+}

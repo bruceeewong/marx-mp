@@ -1,0 +1,23 @@
+<!--pages/face-clip/face-clip.wxml-->
+<audio-player></audio-player>
+<view class="page bg-universe">
+	<movable-area wx:if="{{imageSrc}}" scale-area class="movable-area" style="top:{{areaTop}}px">
+		<movable-view scale inertia damping="1000" direction="all" scale-min="1" style="width:{{initialWidth}}px;height:{{initialHeight}}px" x="{{initialX}}" y="{{initialY}}" bindchange="onChange" bindscale="onScale">
+			<image class="image" src="{{imageSrc}}" />
+		</movable-view>
+	</movable-area>
+	<!-- 这是裁剪框的样式 -->
+	<view class="clip-box" style="top:{{areaTop}}px">
+	</view>
+
+	<view class="footer">
+		<text class="tips color-gray-7">请裁剪正脸部分，保证五官清晰</text>
+		<view class="bottom-btns">
+			<button class="button" bind:tap="onClickCancel">取消</button>
+			<button class="button bg-color-red finish-btn" bind:tap="onClickConfirm">完成</button>
+		</view>
+	</view>
+
+	<!--剪切图片用的canvas-->
+	<canvas wx:if="{{canvasSize}}" canvas-id="canvas" class="canvas" style="width:{{canvasSize}}px;height:{{canvasSize}}px;"></canvas>
+</view>

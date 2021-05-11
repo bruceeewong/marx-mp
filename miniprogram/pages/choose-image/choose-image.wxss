@@ -1,0 +1,36 @@
+/* pages/choose-image/choose-image.wxss */
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tips {
+  margin-top: 20rpx;
+}
+.img-title-top {
+  width: 350rpx;
+  height: 108rpx;
+  margin: 48rpx 0 36rpx;
+}
+
+.center-img {
+  width: 470rpx;
+  height: 620rpx;
+}
+
+.img-btn {
+  margin-bottom: 72rpx;
+}

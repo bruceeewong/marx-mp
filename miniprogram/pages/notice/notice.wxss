@@ -1,0 +1,77 @@
+/* pages/notice/notice.wxss */
+.page {
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 280rpx;
+  padding-bottom: 120rpx;
+}
+.bg-mars {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.img-title {
+  position: absolute;
+  top: 0;
+  height: 470rpx;
+}
+.article {
+  width: 544rpx;
+  padding: 0;
+  margin-left: 40rpx;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 450rpx;
+  margin-top: 70rpx;
+}
+.img-btn {
+  width: 450rpx !important;
+  height: 95rpx;
+  padding: 0;
+  background-image: url(https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/btn2.png);
+  background-color: transparent;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.text {
+  font-size: 28rpx;
+  font-weight: light;
+  color: #fff;
+}
+.text--strong {
+  background-color: #c42916;
+}
+.tips {
+  margin-top: 20rpx;
+}
+.text-tips {
+  display: block;
+  font-size: 20rpx;
+  text-align: center;
+}
+.ani-hide {
+  opacity: 0;
+}
+.ani-fade-in {
+  animation: fade-in 1s ease;
+  animation-fill-mode: forwards;
+}
+.ani-delay-1 {
+  animation-delay: 0.5s;
+}
+.ani-delay-2 {
+  animation-delay: 1s;
+}

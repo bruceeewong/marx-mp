@@ -1,0 +1,31 @@
+<!--pages/facefusion/facefusion.wxml-->
+<marx-loading wx:if="{{loading}}" showText="{{false}}"></marx-loading>
+<audio-player></audio-player>
+
+<view style="display: {{loading ? 'none' : 'flex'}}" class="page fullscreen bg-universe">
+	<image class="img-title-top" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/pick-cloth.png" mode="widthFix" />
+	<text class="desc color-gray-7">请挑选合身的宇航服</text>
+	<text class="desc color-gray-7">我们将根据上传的照片为您量身定做</text>
+
+	<view class="main">
+		<view class="face-detail">
+			<image src="{{activeSuit.url}}" mode="aspectFill" class="face-lg" />
+			<image wx:if="{{userImageUrl !== ''}}" src="{{userImageUrl}}" class="face-user" />
+		</view>
+
+		<view class="face-selections">
+			<image wx:for="{{faceTemplates}}" wx:key="id" src="{{item.url}}" mode="aspectFill" class="face-sm {{item.id === activeSuit.id ? 'face-sm--selected' : ''}}" data-id="{{item.id}}" data-url="{{item.url}}" bindtap="bindFaceSelect" />
+		</view>
+	</view>
+
+	<view class="bottom-btns">
+		<block wx:if="{{!userImageUrl}}">
+			<text class="desc color-gray-7 tips">要求五官清晰无遮挡</text>
+			<image class="img-btn" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/btn-photo.png" mode="widthFix" bindtap="bindChooseImage" />
+		</block>
+		<block wx:else>
+			<image src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/btn-facefusion.png" class="img-btn" bindtap="bindFacefusion"></image>
+			<image style="display: {{retry ? '': 'none'}}" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/btn-retry.png" class="img-btn btn-retry" bindtap="bindRetry"></image>
+		</block>
+	</view>
+</view>

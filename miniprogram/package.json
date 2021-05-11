@@ -1,0 +1,23 @@
+{
+  "name": "marx-mp",
+  "version": "1.0.0",
+  "description": "这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruceeewong/marx-mp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bruceeewong/marx-mp/issues"
+  },
+  "homepage": "https://github.com/bruceeewong/marx-mp#readme",
+  "dependencies": {
+    "socket.io-wxapp-client": "^1.1.12"
+  }
+}

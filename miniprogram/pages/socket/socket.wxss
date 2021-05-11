@@ -1,0 +1,8 @@
+/* pages/socket/socket.wxss */
+.button {
+  position: absolute;
+  bottom: 100rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}

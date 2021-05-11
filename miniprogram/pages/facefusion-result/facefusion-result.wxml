@@ -1,0 +1,17 @@
+<!--pages/facefusion-result/facefusion-result.wxml-->
+<marx-loading wx:if="{{loading}}" showText="{{false}}"></marx-loading>
+<audio-player></audio-player>
+
+<view style="display: {{loading ? 'none' : 'flex'}}" class="page fullscreen bg-universe">
+	<image class="img-title-top" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/page-facefusion-title.png" mode="widthFix" />
+	<text class="desc color-gray-7">您的宇航员证件照已生成</text>
+	<text class="desc color-gray-7">赶紧领取通行证吧！</text>
+
+	<view class="main">
+		<view class="face-detail">
+			<image src="{{webImgUrl}}" mode="aspectFill" class="face-lg" bindtap="bindSaveImage" bindload="bindImgLoad" />
+		</view>
+		<text class="tips color-gray-7">点击图片可保存至相册</text>
+	</view>
+	<image class="img-btn" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/btn-get-marx-card.png" bindtap="bindGeneratePassport"></image>
+</view>

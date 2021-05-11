@@ -1,0 +1,5 @@
+node_modules/
+cloudfunctions/**/conf.js
+miniprogram/conf/*
+.vscode
+.DS_Store

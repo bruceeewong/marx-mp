@@ -1,0 +1,166 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": false,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "appid": "wxaa617536743e1ce1",
+  "projectname": "marx-mp",
+  "libVersion": "2.12.0",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "compileType": "miniprogram",
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/notice/notice",
+          "pathName": "pages/notice/notice",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 1,
+          "name": "pages/identify/identify",
+          "pathName": "pages/identify/identify",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/personal-info/personal-info",
+          "pathName": "pages/personal-info/personal-info",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 3,
+          "name": "pages/facefusion/facefusion",
+          "pathName": "pages/facefusion/facefusion",
+          "query": "imgUrl=http://tmp/wxaa617536743e1ce1.o6zAJs0IQ6olTvYgT2rM77LBtC7I.pK5maWrVCAOM9b32bc997502d625b090bf9e54074184undefined",
+          "scene": null
+        },
+        {
+          "id": 4,
+          "name": "pages/facefusion-result/facefusion-result",
+          "pathName": "pages/facefusion-result/facefusion-result",
+          "query": "image=https://facefusion-merge-1254418846.cos.ap-guangzhou.myqcloud.com/1300207377/304029/E7Sqr9jHrG5y7",
+          "scene": null
+        },
+        {
+          "id": 5,
+          "name": "pages/marx-ticket/marx-ticket",
+          "pathName": "pages/marx-ticket/marx-ticket",
+          "query": "imgUrl=http://tmp/wxaa617536743e1ce1.o6zAJs0IQ6olTvYgT2rM77LBtC7I.tEG2wVeL6blF7630f051a95d19a3aef76710de4b6758.jpeg",
+          "scene": null
+        },
+        {
+          "id": 6,
+          "name": "pages/face-clip/face-clip",
+          "pathName": "pages/face-clip/face-clip",
+          "query": "imgUrl=http://tmp/wxaa617536743e1ce1.o6zAJs0IQ6olTvYgT2rM77LBtC7I.EQUSRYWgUuqOd9e435b4143ded7b25c5a0305e00cedd.jpg",
+          "scene": null
+        },
+        {
+          "id": 7,
+          "name": "pages/choose-image/choose-image",
+          "pathName": "pages/choose-image/choose-image",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 8,
+          "name": "pages/info-form/info-form",
+          "pathName": "pages/info-form/info-form",
+          "query": "nickName=布鲁斯基&gender=0&country=中国",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/socket/socket",
+          "pathName": "pages/socket/socket",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/socket/socket",
+          "pathName": "pages/socket/socket",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/test/test",
+          "pathName": "pages/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/socket/socket",
+          "pathName": "pages/socket/socket",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/io/io",
+          "pathName": "pages/io/io",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

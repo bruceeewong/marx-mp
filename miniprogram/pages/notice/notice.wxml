@@ -1,0 +1,27 @@
+<!--pages/notice/notice.wxml-->
+<audio-player></audio-player>
+
+<view class="page bg-mars">
+	<image src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/page-2-title.png" class="classic-1 img-title" mode="heightFix" />
+	<view class="main">
+		<view class="article">
+			<text class="text">
+        地球时间公元2669年，在膨胀的人口以及人类活动肆意地索取下，地球生态已经濒临崩溃。我们很抱歉地通知大家，曾经蔚蓝家园已经不再适合人类居住…
+      </text>
+			<text class="text">
+        为求人类的生存，Tencent与SKPS机构决定成立火星移民局，向宇宙寻求新的家园。经过长久地探索，我们已经在地球的近邻——火星，搭建了新的居住地，生态已经通过测试，达到可居住水准。
+      </text>
+			<text class="text text--strong">
+        今日起，火星移民局将正式开放移民申请，请尽快办理前往火星所需的通行证，挑选合身的宇航服。完成后立即前往SKPS商城(中国·北京) / Tencent总部(中国·深圳)，搭乘宇宙飞船，前往火星。
+      </text>
+		</view>
+
+		<view class="footer">
+			<button size="mini" open-type="getUserInfo" class="reset-btn img-btn" bindgetuserinfo="onGetUserInfo"></button>
+			<view class="tips color-gray-7">
+				<text class="text-tips">*需要采集您的微信昵称/性别/国家</text>
+				<text class="text-tips">仅用于展示并承诺严格保密</text>
+			</view>
+		</view>
+	</view>
+</view>

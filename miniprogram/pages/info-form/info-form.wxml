@@ -1,0 +1,65 @@
+<marx-loading wx:if="{{loading}}" showText="{{false}}"></marx-loading>
+
+<view class="page">
+	<!-- 表单 -->
+	<view class="section-1">
+		<image class="img-step-title step-1" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/step1.png" />
+
+		<view class="input-group">
+			<view class="mx-input">
+				<view class="mx-input__label color-red">
+					<text>昵</text>
+					<text>称</text>
+				</view>
+				<input value="{{form.name}}" maxlength="10" class="mx-input__control" bindinput="bindNameInput"></input>
+			</view>
+
+			<view class="mx-input">
+				<view class="mx-input__label color-red">
+					<text>性</text>
+					<text>别</text>
+				</view>
+				<picker name="genderIndex" mode="selector" range="{{genders}}" value="{{form.genderIndex}}" class="mx-input__control" bindchange="bindGenderChange">
+					<view class="picker-view">
+						{{filter.placeholder(genders[form.genderIndex], '请选择')}}
+					</view>
+				</picker>
+			</view>
+
+			<view class="mx-input">
+				<view class="mx-input__label color-red">地球国籍</view>
+				<picker name="earthCountryIndex" mode="selector" range="{{earthCountries}}" value="{{form.earthCountryIndex}}" class="mx-input__control" bindchange="bindEarthCountryChange">
+					<view class="picker-view">
+						{{filter.placeholder(earthCountries[form.earthCountryIndex], '请选择')}}
+					</view>
+				</picker>
+			</view>
+		</view>
+	</view>
+	<!-- 表单 -->
+
+	<!-- 滑动组件 -->
+	<view class="section-2">
+		<image class="img-step-title step-2" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/step2.png" />
+		<swiper class="card-swiper square-dot" indicator-dots="true" circular="true" duration="500" bindchange="bindMarsAreaChange" indicator-color="#363535" indicator-active-color="#ff583a">
+			<swiper-item wx:for="{{swiperList}}" wx:key="key" wx:for-index="index" wx:for-item="item" id="{{index}}" class="{{activeAreaIndex==index?'cur':''}}">
+				<view class="swiper-item">
+					<image src="{{item.cardImg}}" mode="aspectFill"></image>
+				</view>
+			</swiper-item>
+		</swiper>
+		<view class="area-intro color-gray-7">
+			<view wx:for="{{swiperList}}" wx:key="key" wx:for-index="index" wx:for-item="item" class="opacity {{activeAreaIndex === index ? 'opacity--active' : ''}}">{{item.intro}}</view>
+		</view>
+	</view>
+	<!-- 滑动组件 -->
+
+	<image class="img-btn" src="https://marx-1257249827.cos.ap-guangzhou.myqcloud.com/images/btn-submit-info.png" bindtap="bindFormSubmit" />
+</view>
+
+
+<view class="absolute-bottom">
+	<image wx:for="{{swiperList}}" wx:key="key" class="mars-terran {{activeAreaIndex === index ? 'mars-terran--active' : ''}}" src="{{item.terranImg}}" mode="aspectFill" />
+</view>
+
+<wxs module="filter" src="../../utils/wxs/filters.wxs"></wxs>

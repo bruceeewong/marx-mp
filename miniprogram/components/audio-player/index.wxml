@@ -1,0 +1,6 @@
+<!--components/audio-player/index.wxml-->
+<view class="audio-player" style="top:{{top}};right:{{right}};left:{{left}};bottom:{{bottom}};">
+	<image wx:if="{{showControl}}" class="audio-player-trigger--{{size}}" src="./last-song.svg" bindtap="bindLastSong"></image>
+	<image class="audio-player-btn audio-player-btn--{{status}} audio-player--{{size}}" src="./audio.svg" bindtap="bindControlAudio" />
+	<image wx:if="{{showControl}}" class="audio-player-trigger--{{size}}" src="./next-song.svg" bindtap="bindNextSong"></image>
+</view>
